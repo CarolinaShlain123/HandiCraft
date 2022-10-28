@@ -1,0 +1,85 @@
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img class="logo-image" src="/logo/hc.png" />
+      <h3 class="logo-text">HandiCraft</h3>
+    </div>
+    <nav class="nav-site-container">
+      <div>
+        <a class="nav-button" href="/">Home</a>
+      </div>
+      <div>
+        <a class="nav-button" href="/acerca">Acerca</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Colecciones &#187;</button>
+        <div class="dropdown-content">
+          <% for (let i = 0; i < collections.length; i++) { %>
+          <form action="/categorias" method="GET">
+            <input
+              type="hidden"
+              name="collection"
+              value="<%= collections[i] %>"
+            />
+            <input
+              class="collection"
+              type="submit"
+              value="<%= collections[i] %>"
+            />
+          </form>
+          <% } %>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-search">
+      <form class="search-form" action="/buscar" method="GET">
+        <input
+          class="search-bar"
+          type="text"
+          name="buscar"
+          placeholder="Buscar productos, marcas..."
+        />
+        <button style="font-size: 15px" class="search-bar-submit" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+    <nav class="nav-menu">
+      <i class="fas fa-bars"></i>
+    </nav>
+
+    <nav class="nav-user-container">
+      <% if(!userLoggedIn){ %>
+      <div>
+        <a class="nav-user" href="/user/viewRegister">Registrarme</a>
+      </div>
+      <div>
+        <a class="nav-user" href="/user/viewLogin">Cuenta</a>
+      </div>
+
+      <% } else if(userLoggedIn && userLoggedIn.isAdmin == true){ %>
+      <div>
+        <a class="nav-user-dashboard" href="http://127.0.0.1:5173/"
+          >Dashboard</a
+        >
+      </div>
+      <div>
+        <a class="nav-user" class="profile-name" href="/user/profile"
+          ><%= userLoggedIn.userName %></a
+        >
+      </div>
+      <% } else{ %>
+
+      <div>
+        <a class="nav-user" class="profile-name" href="/user/profile"
+          ><%= userLoggedIn.userName %></a
+        >
+      </div>
+      <% } %>
+
+      <div>
+        <a class="nav-user" href="/cart">Carrito</a>
+      </div>
+    </nav>
+  </div>
+</header>

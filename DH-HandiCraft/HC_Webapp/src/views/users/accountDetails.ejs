@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('../partials/head') %>
+  <link rel="stylesheet" type="text/css" href="/css/accountDetails.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/accountDetails-tablet.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/accountDetails-desktop.css"
+  />
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="/validationsFront/updateUser.js"></script>
+  <script src="/scripts.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/validationsFront.css" />
+  <body>
+    <div class="errores">
+      <ul></ul>
+    </div>
+    <%- include ('../partials/header') %>
+    <main>
+      <div class="container">
+        <div class="box">
+          <div class="title">
+            <h1>Detalles de cuenta</h1>
+          </div>
+          <div class="half1">
+            <div class="image">
+              <img
+                class="preview"
+                src="/assets/avatars/<%= userLoggedIn.avatar %>"
+              />
+            </div>
+          </div>
+          <div class="half2">
+            <form
+              class="fields"
+              method="POST"
+              id="news"
+              action="/user/update?_method=POST"
+              enctype="multipart/form-data"
+            >
+              <div class="id">
+                <input
+                  class="input-field"
+                  type="hidden"
+                  name="id"
+                  value="<%= userLoggedIn.id %>"
+                  readonly="readonly"
+                />
+              </div>
+              <div class="firstName">
+                <label for="user">Nombre:</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="firstName"
+                  value="<%= userLoggedIn.firstName %>"
+                />
+                <i class="fa fa-solid fa-id-card"></i>
+                <div class="errors">
+                  <p class="feed"></p>
+                  <% if (errors.firstName) { %>
+                  <p class="msg-error"><%= locals.errors.firstName.msg %></p>
+                  <% } %>
+                </div>
+              </div>
+
+              <div class="lastName">
+                <label for="user">Apellido:</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="lastName"
+                  value="<%= userLoggedIn.lastName %>"
+                />
+                <i class="fa fa-solid fa-id-card"></i>
+                <div class="errors">
+                  <p class="feed"></p>
+                  <% if (errors.lastName) { %>
+                  <p class="msg-error"><%= locals.errors.lastName.msg %></p>
+                  <% } %>
+                </div>
+              </div>
+
+              <div class="userName">
+                <label for="user">Nombre de usuario:</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="userName"
+                  value="<%= userLoggedIn.userName %>"
+                />
+                <i class="fa fa-solid fa-user"></i>
+                <div class="errors">
+                  <p class="feed"></p>
+                  <% if (errors.userName) { %>
+                  <p class="msg-error"><%= locals.errors.userName.msg %></p>
+                  <% } %>
+                </div>
+              </div>
+
+              <div class="email">
+                <label for="email">E-mail:</label>
+                <input
+                  class="input-field"
+                  type="email"
+                  name="email"
+                  value="<%= userLoggedIn.email %>"
+                />
+                <i class="fa fa-solid fa-at"></i>
+                <div class="errors">
+                  <p class="feed"></p>
+                  <% if (errors.email) { %>
+                  <p class="msg-error"><%= locals.errors.email.msg %></p>
+                  <% } %>
+                </div>
+              </div>
+
+              <div class="passwd">
+                <label for="password">Contraseña:</label>
+                <input
+                  class="input-field"
+                  type="password"
+                  name="passwd"
+                  placeholder="******"
+                  value=""
+                />
+                <i class="fa fa-solid fa-key"></i>
+              </div>
+              <div class="errors">
+                <% if (errors.passwd) { %>
+                <p class="msg-error"><%= locals.errors.passwd.msg %></p>
+                <% } %>
+              </div>
+              <div class="image-fields-container">
+                <label for="image">Actualizar foto de perfil</label>
+                <input
+                  class="image-upload"
+                  type="file"
+                  name="avatar"
+                  id="image"
+                  autocomplete="off"
+                  onchange="loadFile(event)"
+                  hidden
+                />
+                <div class="errors">
+                  <p class="feed-img"></p>
+                  <% if (errors.avatar) { %>
+                  <p class="msg-error-img"><%= locals.errors.avatar.msg %></p>
+                  <% } %>
+                </div>
+              </div>
+              <div class="buttons">
+                <div class="submit-container">
+                  <input
+                    class="submit"
+                    type="submit"
+                    value="Actualizar datos"
+                  />
+                </div>
+                <div class="btn-close-container">
+                  <a class="btn-close" href="/user/close">Cerrar sesión</a>
+                </div>
+                <div class="btn-back-container">
+                  <a class="btn-back" href="/">Volver</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <%- include ('../partials/footer') %>
+</html>

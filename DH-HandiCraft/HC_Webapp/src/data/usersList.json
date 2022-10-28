@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "firstName": "Carolina",
+    "lastName": "Shlain",
+    "userName": "cshlain",
+    "email": "cshlain@hc.com",
+    "passwd": "$2a$10$j//KDxNCYfFxHyn4C2sCM.FvMAIRwq868/ZR7U0mBhDtDJmtHrAue",
+    "isAdmin": true,
+    "avatar": "blank.jpg"
+  },
+  {
+    "id": 2,
+    "firstName": "Shirel",
+    "lastName": "Lalo",
+    "userName": "slalo",
+    "email": "slalo@hc.com",
+    "passwd": "$2a$10$j//KDxNCYfFxHyn4C2sCM.FvMAIRwq868/ZR7U0mBhDtDJmtHrAue",
+    "isAdmin": true,
+    "avatar": "blank.jpg"
+  },
+  {
+    "id": 3,
+    "firstName": "Santiago",
+    "lastName": "Paez Toledo",
+    "userName": "spaez",
+    "email": "spaez@hc.com",
+    "passwd": "$2a$10$j//KDxNCYfFxHyn4C2sCM.FvMAIRwq868/ZR7U0mBhDtDJmtHrAue",
+    "isAdmin": true,
+    "avatar": "blank.jpg"
+  },
+  {
+    "id": 4,
+    "firstName": "Fernando",
+    "lastName": "Grandoli",
+    "userName": "fgrandoli",
+    "email": "fgrandoli@hc.com",
+    "passwd": "$2a$10$j//KDxNCYfFxHyn4C2sCM.FvMAIRwq868/ZR7U0mBhDtDJmtHrAue",
+    "isAdmin": true,
+    "avatar": "blank.jpg"
+  }
+]

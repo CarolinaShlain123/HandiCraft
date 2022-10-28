@@ -1,0 +1,131 @@
+@media only screen and (min-width: 1200px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 2px solid whitesmoke;
+    background-color: #62909a;
+  }
+
+   .logo {
+    display: flex;
+    align-items: center;
+    width: 15%;
+  }
+
+  .logo-image {
+    width: 30%;
+    height: 80px;
+    padding: 10px 10px;
+  }
+
+  .logo-text {
+    display: flex;
+    align-items: baseline;
+    font-size: 25px;
+    font-family: 'Lucida Sans';
+    font-style: italic;
+  }
+
+  .nav-site {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+  }
+
+  .nav-site a,
+  .nav-user-style a {
+    padding: 10px 25px;
+    display: block;
+  }
+
+  .nav-button {
+  }
+
+  .nav-search {
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-form {
+    display: flex;
+    position: relative;
+  }
+
+  .search-bar {
+    display: flex;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    height: 40px;
+    width: 20rem;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .search-bar-submit {
+    display: flex;
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 16px;
+  }
+
+  .nav-user-style {
+    display: flex;
+  }
+  .nav-user {
+    display: flex;
+    width: 35%;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .profile-name {
+    font-weight: bold;
+  }
+
+  a:link {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: whitesmoke;
+  }
+
+  a:hover {
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

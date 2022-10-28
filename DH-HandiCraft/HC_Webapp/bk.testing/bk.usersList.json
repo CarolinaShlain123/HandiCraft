@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "first_name": "Carolina",
+    "last_name": "Shlain",
+    "user_name": "cshlain",
+    "email": "cshlain@hc.com",
+    "passwd": "123",
+    "isAdmin": true,
+    "avatar": "",
+    "loggedIn": false
+  },
+  {
+    "id": 2,
+    "first_name": "Shirel",
+    "last_name": "Lalo",
+    "user_name": "slalo",
+    "email": "slalo@hc.com",
+    "passwd": "123",
+    "isAdmin": true,
+    "avatar": "",
+    "loggedIn": false
+  },
+  {
+    "id": 3,
+    "first_name": "Fernando",
+    "last_name": "Grandoli",
+    "user_name": "fgrandoli",
+    "email": "fgrandoli@hc.com",
+    "passwd": "123",
+    "isAdmin": true,
+    "avatar": "",
+    "loggedIn": false
+  }
+]

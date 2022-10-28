@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include ('./partials/head') %>
+  <link rel="stylesheet" type="text/css" href="/css/home.css" />
+  <link rel="stylesheet" type="text/css" href="/css/home-tablet.css" />
+  <link rel="stylesheet" type="text/css" href="/css/home-desktop.css" />
+  <body>
+    <div class="container">
+      <%- include ('./partials/header') %>
+      <main>
+        <section class="section-prd">
+          <%- include ('./partials/productList') %> <% if(userLoggedIn &&
+          userLoggedIn.isAdmin == true){ %>
+          <div>
+            <a class="btn-create" href="../viewProduct/createProduct">+</a>
+          </div>
+          <% } %>
+        </section>
+      </main>
+    </div>
+    <%- include ('./partials/footer') %>
+  </body>
+</html>
