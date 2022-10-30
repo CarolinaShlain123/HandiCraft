@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+.box-totalProducts {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  width: 18rem;
+  height: 16rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+  -webkit-box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+  -moz-box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+}
+
+.box-title-totalProducts {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  font-weight: bold;
+  outline: #7cc6b0 0.15rem solid;
+  background-color: #7cc6b0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 0.25rem #62909a solid;
+  height: 30%;
+}
+
+.title-totalProducts {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin: 0.25rem auto;
+}
+
+.totalProducts {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+align-items: center;
+  color: #62909a;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0.25rem auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.totalProducts {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  height: 6rem;
+  border: 10px solid;
+  border-image: linear-gradient(var(--angle), #87a6ab, #62909a, #7cc6b0) 1;
+  animation: 2s rotate linear infinite;
+}
+.productsList-link {
+  display: flex;
+  margin: 14px auto;
+  justify-content: center;
+  padding: 2px 10px;
+  border-radius: 0.5rem;
+  outline: none;
+  position: relative;
+  width: 40%;
+  cursor: pointer;
+  background-color: #62909a;
+  border: 2.5px solid whitesmoke;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s ease;
+  box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -moz-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  top: 110px;
+  right: 5px;
+}
+
+.productsList-link:hover .productsList-link {
+  display: block;
+}
+
+.productsList-link:hover {
+  background-color: white;
+  color: #62909a;
+}

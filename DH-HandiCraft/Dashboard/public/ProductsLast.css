@@ -1,0 +1,118 @@
+.box-productLast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0.5rem;
+  width: 35vw;
+  height: 90vh;
+  min-height: 10vh;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+  -webkit-box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+  -moz-box-shadow: 6px 6px 15px 4px rgba(98, 144, 154, 1);
+}
+
+.box-title-productLast {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: whitesmoke;
+  font-weight: bold;
+  outline: #7cc6b0 0.15rem solid;
+  background-color: #7cc6b0;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom: 0.4rem #62909a solid;
+}
+
+.title-productLast {
+  display: flex;
+  font-size: 1.25rem;
+  padding-left: 1.75rem;
+}
+
+.productLast {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  align-items: center;
+  outline: #7cc6b0 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.productLast-name {
+  color: #62909a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  overflow: auto;
+}
+
+.productLast-desc {
+  color: #62909a;
+  margin: 20px;
+  font-size: 1rem;
+  overflow: auto;
+  text-align: justify;
+}
+
+.productLast-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #62909a;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  flex-shrink: 1;
+  margin: 2.5rem;
+  width: 60%;
+  min-height: 20%;
+  box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -moz-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+}
+
+.productLast-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 95%;
+  height: 95%;
+  flex-shrink: 1;
+}
+
+.productLast-link {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 80%;
+  cursor: pointer;
+  background-color: #62909a;
+  border: 2.5px solid whitesmoke;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s ease;
+  box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -webkit-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+  -moz-box-shadow: 2px 2px 5px 2px rgba(98, 144, 154, 1);
+}
+
+.productLast-link:hover {
+  background-color: #7cc6b0;
+  color: whitesmoke;
+  cursor: pointer;
+}
